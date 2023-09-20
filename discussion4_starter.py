@@ -1,4 +1,5 @@
 class Rectangle():
+    pass
     # Create the constructor "__init__" method
     # Arguments: width (an ingeter), height (an integer)
     # 
@@ -44,7 +45,14 @@ class Rectangle():
 
     # YOUR CODE HERE
     
+def __init__(self,width,height):
+    self.width = width
+    self.height = height
 
+def __str__(self):
+    return "A rectangle with width " +str(self.width) + " and height " + str(self.height)
+
+    
 
 def main():
     r = Rectangle(10, 10)
