@@ -1,4 +1,9 @@
 class Rectangle():
+     # Create the "area" method
+    #
+    # It first verifies inputs and return "Invalid input" if they are invalid.
+    # Otherwise, it returns the area of the rectangle.
+
     def __init__(self,width,height):
         self.width = width
         self.height = height
@@ -11,7 +16,13 @@ class Rectangle():
             return True
         else:
             return False
-    
+    def area(self,width,height):
+        if not self.verify_input(self,width,height):
+            return "Invalid input"
+        else:
+            return self.width * self.height
+
+
 
     # Create the constructor "__init__" method
     # Arguments: width (an ingeter), height (an integer)
