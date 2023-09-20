@@ -1,5 +1,18 @@
 class Rectangle():
-    pass
+    def __init__(self,width,height):
+        self.width = width
+        self.height = height
+
+    def __str__(self):
+        return "A rectangle with width " +str(self.width) + " and height " + str(self.height)
+
+    def verify_input(self,widh,height):
+        if self.width > 0 and self.height >0:
+            return True
+        else:
+            return False
+    
+
     # Create the constructor "__init__" method
     # Arguments: width (an ingeter), height (an integer)
     # 
@@ -44,15 +57,6 @@ class Rectangle():
     # Otherwise, it returns the perimeter of the rectangle.
 
     # YOUR CODE HERE
-    
-def __init__(self,width,height):
-    self.width = width
-    self.height = height
-
-def __str__(self):
-    return "A rectangle with width " +str(self.width) + " and height " + str(self.height)
-
-    
 
 def main():
     r = Rectangle(10, 10)
