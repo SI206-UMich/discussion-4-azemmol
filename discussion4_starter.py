@@ -21,7 +21,11 @@ class Rectangle():
             return "Invalid input"
         else:
             return self.width * self.height
-
+    def perimeter(self,width,height):
+        if not self.verify_input(self,width,height):
+            return "Invalid input"
+        else:
+            return 2 * (self.width + self.height)
 
 
     # Create the constructor "__init__" method
